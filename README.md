@@ -115,4 +115,5 @@ From a user's perspective, all that it's initially required is access to an AWS 
 that has enough permissions to crete secrets in the Secrets Manager. Then, the idea would be to add
 a secret to any source system (e.g. AWS Secrets Manager) and wait for it to be synchronized across
 the cluster of destination systems (one per secrets-sync instance, as it does not support
-one-to-many synchronizations).
+one-to-many synchronizations). This naturally requires for the secret-sync to be scheduled on a
+periodical execution.
